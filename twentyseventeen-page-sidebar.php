@@ -7,7 +7,7 @@
  */
 /*
  * Plugin Name: Page Sidebar for TwentySeventeen
- * Plugin URI:  https://mythemeshop.com/plugins/wp-quiz/
+ * Plugin URI:  https://github.com/intoxstudio/twentyseventeen-page-sidebar/
  * Description: Adds the main sidebar to pages. Install Content Aware Sidebars for customization.
  * Version:     1.0
  * Author:      Joachim Jensen
