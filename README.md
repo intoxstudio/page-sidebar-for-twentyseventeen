@@ -1,10 +1,13 @@
-# Page Sidebar for TwentySeventeen
-Adds the main sidebar to pages when using TwentySeventeen
+# Page Sidebar for Twenty Seventeen
+Adds the main sidebar to pages in the Twenty Seventeen default WordPress theme
 
 
 ## Usage
 
-Upload and install on your WordPress site. That's it! Main sidebar will now be displayed on all pages.
+1. Upload and install on your WordPress site.
+2. That's it! Main sidebar will now be displayed on all pages.
+
+[You can also read more here to get started.](https://dev.institute/twenty-seventeen-page-sidebars/)
 
 
 ## Recommendations
