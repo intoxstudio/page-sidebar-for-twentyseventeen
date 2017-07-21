@@ -8,6 +8,7 @@
 /*
  * Plugin Name: Page Sidebar for TwentySeventeen
  * Plugin URI:  https://github.com/intoxstudio/twentyseventeen-page-sidebar/
+ * GitHub Plugin URI: intoxstudio/twentyseventeen-page-sidebar
  * Description: Adds the main sidebar to pages. Install Content Aware Sidebars for customization.
  * Version:     1.0
  * Author:      Joachim Jensen
@@ -20,42 +21,40 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Check if sidebar should be added
- *
- * @since  1.0
- * @return boolean
- */
-function psts_in_context() {
-	return is_page() && !is_front_page();
-}
-
-/**
  * Add relevant classes to body
  *
  * @since  1.0
  * @param  array  $classes
  * @return array
  */
-function psts_body_classes( $classes ){
-if ( psts_in_context() && is_active_sidebar( 'sidebar-1' ) ) {
-		$classes[] = 'has-sidebar';
-	}
+function psts_body_class( $classes ){
+	$classes[] = 'has-sidebar';
 	return $classes;
 }
 
 /**
- * Include page template
+ * Get template to be loaded
  *
  * @since  1.0
- * @param  string  $original_template
+ * @param  string  $template
  * @return string
  */
-function psts_template( $original_template ) {
-	if ( psts_in_context() ) {
-		$original_template = plugin_dir_path( __FILE__ ) . 'templates/page.php';
+function psts_template( $template ) {
+	if ( is_page() && !get_page_template_slug() && is_active_sidebar( 'sidebar-1' )) {
+		add_filter( 'body_class', 'psts_body_class' );
+		
+		$path = plugin_dir_path( __FILE__ ) . 'templates/';
+		$name = 'page';
+		
+		if( is_front_page() && twentyseventeen_panel_count() === 0) {
+			$name = 'front-page';
+		}
+
+		$template = $path . $name . '.php';
 	}
-	return $original_template;
+	return $template;
 }
 
-add_filter( 'body_class', 'psts_body_classes' );
 add_filter( 'template_include', 'psts_template' );
+
+//
