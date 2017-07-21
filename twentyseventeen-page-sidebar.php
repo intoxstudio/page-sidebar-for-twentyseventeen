@@ -41,16 +41,17 @@ function psts_body_class( $classes ){
  */
 function psts_template( $template ) {
 	if ( is_page() && !get_page_template_slug() && is_active_sidebar( 'sidebar-1' )) {
-		add_filter( 'body_class', 'psts_body_class' );
-		
-		$path = plugin_dir_path( __FILE__ ) . 'templates/';
-		$name = 'page';
-		
-		if( is_front_page() && twentyseventeen_panel_count() === 0) {
+		$name = '';
+		if(!is_front_page()) {
+			$name = 'page';
+		} elseif(twentyseventeen_panel_count() === 0) {
 			$name = 'front-page';
 		}
 
-		$template = $path . $name . '.php';
+		if($name) {
+			add_filter( 'body_class', 'psts_body_class' );
+			$template = plugin_dir_path( __FILE__ ) . 'templates/' . $name . '.php';
+		}
 	}
 	return $template;
 }
