@@ -7,7 +7,7 @@ Tags: twentyseventeen, page sidebar, twentyseventeen sidebar, 2017 sidebar
 Requires at least: 4.7
 Tested up to: 4.8
 Requires PHP: 5.2.4
-Stable tag: 1.0
+Stable tag: 1.1
 
 Add a page sidebar when using the Twenty Seventeen theme
 
@@ -60,6 +60,11 @@ Please open a new thread in the support forums. We will do our best to answer as
 == Screenshots ==
 
 == Changelog ==
+
+= 1.1 =
+
+* Fixed: featured image on front page could make widgets unusable
+* Fixed: compatibility when using another theme on mobile devices
 
 = 1.0 =
 

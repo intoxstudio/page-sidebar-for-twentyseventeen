@@ -10,7 +10,7 @@
  * Plugin Name: Page Sidebar for Twenty Seventeen
  * Plugin URI:  https://wordpress.org/plugins/page-sidebar-for-twentyseventeen/
  * Description: Adds Blog Sidebar to pages.
- * Version:     1.0
+ * Version:     1.1
  * Author:      Joachim Jensen
  * Author URI:  https://dev.institute
  * License: GPLv3
