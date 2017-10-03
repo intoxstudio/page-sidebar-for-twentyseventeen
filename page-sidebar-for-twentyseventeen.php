@@ -38,6 +38,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+// Make sure legacy plugin with other slug is not enabled
 if(!function_exists('psts_body_class')) {
 
 	require_once(plugin_dir_path( __FILE__ ).'tgm-plugin-activation.php');
@@ -78,7 +79,19 @@ if(!function_exists('psts_body_class')) {
 		return $template;
 	}
 
-	add_filter( 'template_include', 'psts_template' );
+	/**
+	 * Initiate
+	 *
+	 * @since  1.1
+	 * @return void
+	 */
+	function psts_init() {
+		if(function_exists('twentyseventeen_setup')) {
+			add_filter( 'template_include', 'psts_template' );
+		}
+	}
+
+	add_action('after_setup_theme','psts_init',999);
 
 }
 
