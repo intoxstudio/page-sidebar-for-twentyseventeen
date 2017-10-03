@@ -16,7 +16,7 @@ while ( have_posts() ) :
 		$thumbnail_attributes = wp_get_attachment_image_src( $post_thumbnail_id, 'twentyseventeen-featured-image' );
 		$ratio = $thumbnail_attributes[2] / $thumbnail_attributes[1] * 100;
 		?>
-		<div class="panel-image" style="background-image: url(<?php echo esc_url( $thumbnail[0] ); ?>);">
+		<div class="panel-image twentyseventeen-panel" style="background-image: url(<?php echo esc_url( $thumbnail[0] ); ?>);">
 			<div class="panel-image-prop" style="padding-top: <?php echo esc_attr( $ratio ); ?>%"></div>
 		</div>
 	<?php endif; ?>
