@@ -24,7 +24,7 @@ For best results, go to *Customize > Theme Options* and set **Page Layout** to *
 
 = Sidebar on individual pages =
 
-If you want your page sidebar to differ from your post sidebar, it is recommended to install Content Aware Sidebars. That plugin allows you to show and hide widget areas on a wide range of conditions, giving you complete control over your sidebar.
+If you want your page sidebar to differ from your post sidebar, it is recommended to also install [Content Aware Sidebars](http://dev.institute/wordpress-sidebars/). That plugin allows you to show and hide widget areas on a wide range of conditions, giving you complete control over your sidebar.
 
 == Installation ==
 
@@ -41,7 +41,7 @@ This plugin only works for the Twenty Seventeen theme and its child themes. Try 
 
 = How to show/hide a different sidebar on pages? =
 
-This plugin adds the Blog Sidebar to all pages. If you want to display or hide different sidebars on different pages, we recommend installing Content Aware Sidebars.
+This plugin adds the Blog Sidebar to all pages. If you want to display or hide different sidebars on different pages, we recommend installing [Content Aware Sidebars](http://dev.institute/wordpress-sidebars/) as well.
 
 [Click here to read more.](https://dev.institute/blog/twenty-seventeen-page-sidebars/)
 
