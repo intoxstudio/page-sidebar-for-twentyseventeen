@@ -5,7 +5,7 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: twentyseventeen, page sidebar, twentyseventeen sidebar, 2017 sidebar
 Requires at least: 4.7
-Tested up to: 4.8
+Tested up to: 5.3
 Requires PHP: 5.2.4
 Stable tag: 1.1
 
