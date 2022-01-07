@@ -1,9 +1,9 @@
 <?php
 /**
  * @package Page Sidebar for TwentySeventeen
- * @author Joachim Jensen <jv@intox.dk>
+ * @author Joachim Jensen <joachim@dev.institute>
  * @license GPLv3
- * @copyright 2017 by Joachim Jensen
+ * @copyright 2022 by Joachim Jensen
  */
 
 get_header();
@@ -48,5 +48,3 @@ while ( have_posts() ) :
 	endwhile;
 
 get_footer();
-
-//

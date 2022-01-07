@@ -1,24 +1,17 @@
 <?php
 /**
- * @package Page Sidebar for Twenty Seventeen
- * @author Joachim Jensen <jv@intox.dk>
+ * @package Page Sidebar for TwentySeventeen
+ * @author Joachim Jensen <joachim@dev.institute>
  * @license GPLv3
- * @copyright 2017 by Joachim Jensen
- */
-
-/**
+ * @copyright 2022 by Joachim Jensen
+ *
  * Plugin Name: Page Sidebar for Twenty Seventeen
  * Plugin URI:  https://wordpress.org/plugins/page-sidebar-for-twentyseventeen/
- * Description: Adds Blog Sidebar to pages.
- * Version:     1.1
+ * Description: Adds default sidebar to all pages.
+ * Version:     1.2
  * Author:      Joachim Jensen
  * Author URI:  https://dev.institute
  * License: GPLv3
- */
-
-/**
- * Page Sidebar for Twenty Seventeen
- * Copyright (C) 2017 Joachim Jensen - jv@intox.dk
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -94,5 +87,3 @@ if(!function_exists('psts_body_class')) {
 	add_action('after_setup_theme','psts_init',999);
 
 }
-
-//
