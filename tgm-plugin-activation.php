@@ -1,9 +1,9 @@
 <?php
 /**
- * @package Page Sidebar for Twenty Seventeen
- * @author Joachim Jensen <jv@intox.dk>
+ * @package Page Sidebar for TwentySeventeen
+ * @author Joachim Jensen <joachim@dev.institute>
  * @license GPLv3
- * @copyright 2017 by Joachim Jensen
+ * @copyright 2025 by Joachim Jensen
  */
 
 require_once plugin_dir_path( __FILE__ ).'lib/TGM-Plugin-Activation/class-tgm-plugin-activation.php';

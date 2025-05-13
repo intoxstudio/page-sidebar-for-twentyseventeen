@@ -3,7 +3,7 @@
  * @package Page Sidebar for TwentySeventeen
  * @author Joachim Jensen <joachim@dev.institute>
  * @license GPLv3
- * @copyright 2022 by Joachim Jensen
+ * @copyright 2025 by Joachim Jensen
  */
 
 get_header(); ?>

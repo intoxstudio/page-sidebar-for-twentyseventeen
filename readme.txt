@@ -5,9 +5,9 @@ License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl.html
 Tags: twentyseventeen, page sidebar, twentyseventeen sidebar, 2017 sidebar
 Requires at least: 4.7
-Tested up to: 5.8
-Requires PHP: 5.2.4
-Stable tag: 1.2
+Tested up to: 6.8
+Requires PHP: 5.6
+Stable tag: 1.3
 
 Add a page sidebar when using the Twenty Seventeen theme
 
@@ -57,15 +57,8 @@ Not with this plugin, it simply adds the Blog Sidebar to all pages.
 
 == Changelog ==
 
-= 1.2 =
+**Thank you for using our plugin!**
 
-* [new] wordpress 5.8 support
+We regularly update it to improve performance and ensure compatibility with the latest WordPress releases. To experience the newest features and enhancements, use the latest version.
 
-= 1.1 =
-
-* [fixed] featured image on front page could make widgets unusable
-* [fixed] compatibility when using another theme on mobile devices
-
-= 1.0 =
-
-* Initial release
+[Follow development and see all changes on GitHub](https://github.com/intoxstudio/page-sidebar-for-twentyseventeen).
